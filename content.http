@@ -1,0 +1,62 @@
+
+
+POST  http://localhost:8080/api/content
+Content-Type: application/json
+
+{
+  "id":  2,
+  "title":  "My second 2 BLOG",
+  "desc":  "My second 2 BlogPost",
+  "status":  "IDEA",
+  "contentType" :"ARTICLE",
+  "dateCreated":"2023-02-27T10:12:02.4300897",
+  "dateUpdated":  null,
+  "url":""
+}
+
+POST  http://localhost:8080/api/content
+Content-Type: application/json
+
+{
+  "id":  2,
+  "title":  "My second 2 BLOG",
+  "desc":  "My second 2 BlogPost",
+  "status":  "IDEA",
+  "contentType" :"VIDEO",
+  "dateCreated":"2023-02-27T10:12:02.4300897",
+  "dateUpdated":  null,
+  "url":""
+}
+
+
+POST  http://localhost:8080/api/content
+Content-Type: application/json
+
+{
+  "id":  1,
+  "title":  "My FIRST FIRST BLOG",
+  "desc":  "My FIRST......... BlogPost",
+  "status":  "IDEA",
+  "contentType" :"VIDEO",
+  "dateCreated":"2023-02-27T10:12:02.4300897",
+  "dateUpdated":  null,
+  "url":"http://localhost:8080/api/content"
+}
+
+DELETE http://localhost:8080/api/content/2
+
+GET http://localhost:8080/api/content
+
+PUT  http://localhost:8080/api/content/1
+Content-Type: application/json
+
+{
+  "id":  1,
+  "title":  "My FIRST FIRST BLOG",
+  "desc":  "myfirst ....BlogPost",
+  "status":  "IDEA",
+  "contentType" :"ARTICLE",
+  "dateCreated":"2023-02-27T10:12:02.4300897",
+  "dateUpdated":  null,
+  "url":"http://localhost:8080/api/content"
+}
